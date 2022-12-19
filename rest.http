@@ -1,0 +1,28 @@
+GET http://localhost:1337/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0YW5seWJhYnk0dUBnbWFpbC5jb20iLCJpYXQiOjE2NzA5OTk1ODF9.gUZrDusrSTPSaFZ6qRfelejYWheJElYnVYjqDLUPjSI
+
+###
+
+POST http://localhost:1337/api/login
+Content-Type: application/json
+
+{
+    "email" : "stanlybaby4u@gmail.com",
+    "password" : "asdfasdf"
+}
+
+### 
+POST http://localhost:1337/api/register
+Content-Type:  application/json
+
+{
+    "firstName" : "Stanly",
+    "lastName" : "Baby", 
+    "phoneNumber" : "1234567890",
+    "email" : "stanly.dev@gmail.com",
+    "password" : "asdfasdf"
+}
+###
+GET http://localhost:1337/userdata
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InN0YW5seWJhYnk0dUBnbWFpbC5jb20iLCJpYXQiOjE2NzA5OTk1ODF9.gUZrDusrSTPSaFZ6qRfelejYWheJElYnVYjqDLUPjSI
